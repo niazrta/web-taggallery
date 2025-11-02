@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(182, 158, 158) !important; 
+}
+
+
+
+
+
+
+
+
+
+
+.ce-header {
+  @apply font-sans text-black;
+}
+
+.ce-block h1, .ce-header--h1 {
+  @apply text-4xl font-bold mb-4;
+}
+
+.ce-block h2, .ce-header--h2 {
+  @apply text-3xl font-bold mb-3;
+}
+
+.ce-block h3, .ce-header--h3 {
+  @apply text-2xl font-bold mb-2;
+}
+
+.ce-block p, .ce-paragraph {
+  @apply text-base leading-relaxed mb-4;
+}
+
+.image-tool__caption {
+  @apply text-center text-gray-500 text-sm mt-1;
+}
+
+ul.list-disc {
+  @apply pl-5 mb-2;
+}
+
+li {
+  @apply mb-1;
+}
+
+.article-content .ce-header {
+  @apply font-sans text-white;
+}
+
+.article-content .ce-block h1, .ce-header--h1 {
+  @apply text-4xl font-bold mb-4;
+}
+
+.article-content.ce-block h2, .ce-header--h2 {
+  @apply text-3xl font-bold mb-3;
+}
+
+.article-content.ce-block h3, .ce-header--h3 {
+  @apply text-2xl font-bold mb-2;
+}
+
+.article-content .ce-paragraph {
+  @apply text-white;
+}
