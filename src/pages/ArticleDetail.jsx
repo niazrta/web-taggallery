@@ -4,7 +4,7 @@ import axios from 'axios';
 import LatestArticles from '../components/LatestArticles';
 import ServiceList from '../components/ServiceList';
 import { Calendar } from 'lucide-react';
-import { motion } from 'framer-motion'; // Import framer-motion
+
 
 // --- Fungsi renderContent (Sudah benar dengan lazy load & styling) ---
 function renderContent(content) {
