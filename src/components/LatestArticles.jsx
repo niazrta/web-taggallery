@@ -7,7 +7,7 @@ const LatestArticles = ({ articles, currentArticleId }) => {
 
   return (
     <div className="w-full mt-12">
-      <h3 className="text-2xl font-bold mb-4 text-white">Artikel Terbaru Lainnya</h3>
+      <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">Artikel Terbaru Lainnya</h3>
       <div className="space-y-4">
         {filteredArticles.map(article => (
           <Link 
@@ -20,7 +20,7 @@ const LatestArticles = ({ articles, currentArticleId }) => {
               alt={article.title}
               className="w-36 h-24 object-cover rounded-md flex-shrink-0"
             />
-            <h4 className="font-semibold text-white text-lg w-48">{article.title}</h4>
+            <h4 className="font-semibold text-white text-base md:text-lg">{article.title}</h4>
           </Link>
         ))}
       </div>

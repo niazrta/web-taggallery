@@ -195,7 +195,7 @@ const ArticleDetail = () => {
   }
 
   return (
-    <div className="relative w-full bg-[#8a0000] text-white flex flex-col justify-center p-8 md:p-0">
+    <div className="relative w-full bg-[#8a0000] text-white flex flex-col justify-center py-8 md:p-0">
       {/* Background */}
       <div className="overflow-hidden absolute top-0 right-0 w-full h-full z-[1]">
         <img
@@ -206,7 +206,7 @@ const ArticleDetail = () => {
       </div>
 
       {/* Content */}
-      <div className="relative bg-[rgba(94,1,0,1)] p-10 rounded-t-[130px] lg:flex mt-25 z-[2]">
+      <div className="relative bg-[rgba(94,1,0,1)] p-10 rounded-t-[60px] lg:flex mt-25 z-[2]">
         <div className="relative max-w-7xl mx-auto lg:flex lg:gap-12">
           {/* Left */}
           <div className="lg:w-2/3 lg:pr-20 lg:border-r lg:border-white/50">

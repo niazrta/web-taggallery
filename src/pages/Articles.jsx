@@ -70,16 +70,16 @@ function Articles() {
       <div className="max-w-7xl mx-auto">
         {/* Header & Search */}
         <div
-          className="flex justify-between items-center mb-8"
+          className="flex flex-col md:flex-row md:justify-between md:items-center mb-8"
           data-aos="fade-down"
         >
-          <h1 className="text-4xl font-bold text-white mb-8">Semua Artikel</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 md:mb-0">Semua Artikel</h1>
           <input
             type="search"
             placeholder="Cari artikel..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="px-4 py-2 rounded-lg bg-transparent border border-white text-white placeholder:text-white/100 w-1/3 focus:ring-white focus:border-white"
+            className="px-4 py-2 rounded-lg bg-transparent border border-white text-white placeholder:text-white/100 w-full md:w-1/3 focus:ring-white focus:border-white"
           />
         </div>
 
@@ -104,7 +104,7 @@ function Articles() {
                 className="w-full h-48 object-cover"
                 />
                 <div className="p-6 flex flex-col flex-grow">
-                  <h2 className="text-xl font-bold mb-2">{blog.title}</h2>
+                  <h2 className="text-lg md:text-xl font-bold mb-2">{blog.title}</h2>
                   <p className="text-gray-600 text-sm mb-4 flex-grow line-clamp-3">
                     {createPreview(blog.content)}
                     </p>

@@ -16,7 +16,7 @@ const services = [
 const ServiceList = () => {
   return (
     <div className="w-full mt-12">
-      <h3 className="text-2xl font-bold mb-4 text-white">Galeri Layanan Kami</h3>
+      <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">Galeri Layanan Kami</h3>
       <div className="space-y-2">
         {services.map((service, index) => (
           <Link 
