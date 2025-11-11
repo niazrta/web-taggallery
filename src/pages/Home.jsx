@@ -438,7 +438,7 @@ const Home = () => {
         >
           <div className="w-full max-w-full sm:max-w-4xl md:max-w-5xl lg:max-w-[1200px] h-full mx-auto flex items-center px-4 sm:px-6 md:px-8">
             <div
-              className=" mt-0 sm:mt-30 max-w-full sm:max-w-3xl md:max-w-4xl text-left ml-0 sm:ml-8 md:ml-12 lg:ml-56"
+              className=" mt-0 sm:mt-40 max-w-full sm:max-w-3xl md:max-w-4xl text-left ml-0 sm:ml-8 md:ml-12 lg:ml-20"
               data-aos="fade-right"
               data-aos-delay="300"
             >

@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 function AdminDashboard() {
   const [blogs, setBlogs] = useState([]);
   const navigate = useNavigate();
-  const apiUrl = import.meta.env.VITE_API_BASE_URL; // pastikan di .env sudah ada
+  const apiUrl = import.meta.env.VITE_API_BASE_URL; 
 
   useEffect(() => {
     const fetchBlogs = async () => {

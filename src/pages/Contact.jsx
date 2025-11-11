@@ -83,38 +83,47 @@ const Contact = () => {
         `}
       </style>
       <div>
-        {/* Section 1 FAQ - Desktop layout preserved */}
+        {/* Section 1 FAQ */}
         <div
-          className="w-full h-screen text-white bg-cover bg-center"
+          className="w-full min-h-screen text-white bg-cover bg-center"
           style={{ backgroundImage: "url('/assets/bg-page/bg-5-home.png')" }}
           data-aos="fade-up"
         >
-          <div className="w-full max-w-[1200px] h-full mx-auto flex items-center justify-center px-4">
-            <div className="my-auto">
-              <h1 className="text-[48px] font-bold mb-4 text-center" data-aos="fade-down">
+          <div className="w-full max-w-[1200px] mx-auto px-4 py-24">
+            <div>
+              <h1 className="text-[48px] font-bold mb-12 text-center" data-aos="fade-down">
                 Frequently Asked Questions
               </h1>
-              <div className="flex flex-col gap-10 w-full mx-auto">
+
+              <div className="flex flex-col gap-6 w-full max-w-3xl mx-auto">
                 {faqs.map((faq, index) => (
                   <div key={index} data-aos="fade-up" data-aos-delay={index * 100}>
                     <div
-                      className="bg-[#FF0000] rounded-md px-4 py-2 font-semibold text-lg cursor-pointer hover:bg-red-700 transition-colors"
+                      className="bg-[#FF0000] rounded-md px-4 py-3 font-semibold text-lg cursor-pointer hover:bg-red-700 transition-colors flex justify-between items-center"
                       onClick={() => toggleFAQ(index)}
                     >
-                      {faq.question}
+                      <span>{faq.question}</span>
+                      <span className={`transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""}`}>
+                        
+                      </span>
                     </div>
-                    {openIndex === index && (
-                      <div className="bg-[#C94B4B] rounded-md px-6 py-5 font-medium text-base mt-0 lg:max-w-[688px]">
-                        {faq.answer}
-                      </div>
-                    )}
+
+                    <div
+                      className={`
+                        bg-[#C94B4B] rounded-md font-medium text-base
+                        overflow-hidden transition-all duration-500 ease-in-out
+                        ${openIndex === index ? "max-h-[500px] opacity-100 py-5 px-6 mt-2" : "max-h-0 opacity-0"}
+                      `}
+                    >
+                      {faq.answer}
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
           </div>
         </div>
-        {/* End Section 1 FAQ */}
+      {/* End of Section 1 FAQ */}
       </div>
 
       <div
@@ -147,7 +156,7 @@ const Contact = () => {
         {/* Section 2 Konten utama */}
         <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {/* Section Kiri: Formulir Kontak */}
-          <div className="col-span-1 p-4 w-full" data-aos="fade-right">
+          <div className="col-span-1 p-4 w-full lg:ml-20" data-aos="fade-right">
             <h1 className="text-base sm:text-lg font-semibold mb-2">
               Nama Lengkap
             </h1>
@@ -191,7 +200,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                   />
-                  <p className="text-xs mt-1">*terhubung dengan whatsapp</p>
+                  <p className="text-xs mt-1">*terhubung dengan WhatsApp</p>
                 </div>
               </div>
               <div>
@@ -219,7 +228,7 @@ const Contact = () => {
           </div>
 
           {/* Section Tengah: Live Chat dan Social Media */}
-          <div className="flex flex-col space-y-3.5 pt-4 sm:pt-6 lg:pt-7 mx-4 sm:mx-4 lg:mx-18 w-full" data-aos="fade-up">
+          <div className="flex flex-col space-y-3.5 pt-4 sm:pt-6 lg:pt-7 mx-4 sm:mx-4 lg:mx-30 w-full" data-aos="fade-up">
             <div className="flex flex-col">
               <i className="ri-whatsapp-line text-3xl sm:text-4xl"></i>
               <h2 className="text-base sm:text-lg font-semibold">
@@ -281,27 +290,28 @@ const Contact = () => {
           </div>
 
           {/* Section Kanan: Get in touch */}
-          <div className="col-span-1 p-0 flex overflow-hidden items-center w-full z-11 sm:flex-row sm:items-center flex-col mb-10 sm:mb-0 md:pt-20 lg:pt-2" data-aos="fade-left">
-            <img
-              src="/assets/foto-ContactPage/foto-bgCC.jpg"
-              className="absolute sm:w-[300px] md:w-[400px] lg:w-[440px] sm:h-[300px] md:h-[300px] lg:h-[380px] w-full h-[200px] object-cover rounded-lg sm:-mr-6 md:mr-88 lg:-mr-11 brightness-60 sm:absolute sm:right-0"
-              alt="background"
-              style={{ right: 0 }}
-            />
-            <div className="relative z-10 text-center sm:text-left  sm:ml-4 md:ml-12  p-4 sm:p-0">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
-                Get in touch
-              </h1>
-              <p className="text-base sm:text-lg mt-2 sm:mt-4">
-                Jangan sungkan untuk <br />
-                menghubungi kami kapan saja.
-                <br />
-                Anda bisa berkonsultasi gratis
-                <br />
-                dengan tim ahli kami yang siap
-                <br />
-                membantu anda
-              </p>
+          <div className="relative w-full">
+            <div className="relative mt-10 rounded-lg overflow-hidden h-[380px] w-full sm:absolute sm:top-0 sm:right-0 sm:mr-[-9%] sm:mt-0 sm:w-[320px] md:w-[400px] lg:w-[440px]" data-aos="fade-left">
+              <img
+                src="/assets/foto-ContactPage/foto-bgCC.jpg"
+                className="absolute inset-0 w-full h-full object-cover brightness-60"
+                alt="background"
+              />
+              <div className="relative z-10 flex flex-col justify-center h-full text-left p-8 md:p-12">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+                  Get in touch
+                </h1>
+                <p className="text-base sm:text-lg mt-2 sm:mt-4">
+                  Jangan sungkan untuk <br />
+                  menghubungi kami kapan saja.
+                  <br />
+                  Anda bisa berkonsultasi gratis
+                  <br />
+                  dengan tim ahli kami yang siap
+                  <br />
+                  membantu anda.
+                </p>
+              </div>
             </div>
           </div>
         </div>

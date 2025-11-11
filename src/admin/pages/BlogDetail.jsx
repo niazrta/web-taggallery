@@ -194,7 +194,7 @@ function BlogDetail() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link
               to="/admin"
-              className="text-sm flex items-center gap-2 text-gray-700 hover:text-[rgba(144,0,22,1)] font-medium transition"
+              className="text-sm flex items-center gap-2 text-gray-700 hover:text-[rgba(144,0,22,1)] transition"
             >
               <ArrowLeft size={16} />
               Back to Dashboard
@@ -221,7 +221,7 @@ function BlogDetail() {
             </div>
           )}
 
-          <h1 className="text-4xl md:text-5xl font-bold font-serif text-gray-900 mb-4 break-words">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 break-words">
             {blog.title}
           </h1>
 

@@ -92,7 +92,7 @@ function Articles() {
             <Link
             to={`/artikel/${blog.slug}`}
             key={blog.id}
-            className="block h-full" 
+            className="block h-full w-full max-w-sm mx-auto"
             data-aos="zoom-in"
             >
               <div
