@@ -91,7 +91,6 @@ const Home = () => {
               data-aos-delay="300"
             >
               Kami Bantu Brandmu Tampil Berkesan, Berdampak, & Berkelas.
-              Taggallery Agency: Solusi Lengkap untuk Bisnismu
             </h1>
             <p
               className="ml-1 mt-2.5 text-lg sm:text-xl md:text-2xl lg:text-[24px]"
@@ -112,7 +111,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="button1 text-base bg-[#D31313] hover:bg-[#980505] px-4 p-1 rounded-2xl mt-12 w-fit ml-20 sm:ml-0 sm:translate-x-0 lg:translate-x-0"
               >
-                Get Started Now
+                KONSULTASI GRATIS
               </a>
               <Link
                 to="/profile"
@@ -224,7 +223,7 @@ const Home = () => {
               {/* Versi mobile/tablet = normal paragraf */}
               {/* Versi desktop = pakai <br/> seperti desainmu */}
               <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:hidden">
-                Tanggallery adalah Creative Digital Agency yang berdiri sejak
+                Taggallery adalah Creative Digital Agency yang berdiri sejak
                 2021 untuk membantu brand go digital, lebih kreatif, dan
                 berdampak.
               </p>
@@ -236,7 +235,7 @@ const Home = () => {
 
               {/* Hanya muncul di desktop */}
               <p className="hidden lg:block mt-6 text-[22px] leading-tight">
-                Tanggallery adalah Creative <br />
+                Taggallery adalah Creative <br />
                 Digital Agency yang berdiri sejak 2021
                 <br />
                 untuk membantu brand go digital, <br />
@@ -269,7 +268,7 @@ const Home = () => {
                 data-aos-delay="300"
               >
                 <img
-                  src="assets/foto-HomePage/fotoTim_rev/cover_layanan.webp"
+                  src="assets/foto-ProfilPage/bg-top-2.jpg"
                   alt="Consultation Service"
                   className="w-full h-64 sm:h-72 md:h-80 lg:h-90 object-cover rounded-xl shadow-lg ml-0 lg:ml-4 relative bottom-4"
                 />
